@@ -44,7 +44,39 @@ margin-top: 0em;
   margin-right: auto;
   margin-top: 0em;
   position: absolute;
-  bottom: 91%;
+  bottom: 94%;
+}
+
+/* I burgermenuen */
+
+
+#burgerpunkter{
+  text-align: center;
+  padding-top: 2em;
+  font-size: 28px;
+  font-family: acier-bat-solid, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ikke besøgt link */
+a:link {
+  color: var(---white);
+}
+
+/* besøgt link */
+a:visited {
+  color: lightblue;
+}
+/* valgt link */
+a:active {
+  color: var(---darkred);
+}
+
+
+
+a{
+  text-decoration: none;
 }
 
 /* Body */
@@ -136,12 +168,20 @@ footer {
 }
 
 #flabel{
-  width: 5em;
+  width: 6em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1em;
 
+}
+
+#fb{
+  width: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
 }
 
 /* Sections (højde == skærmhøjde) */
