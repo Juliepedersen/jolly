@@ -38,6 +38,14 @@ margin-right: auto;
 margin-top: 0em;
 }
 
+#burger{
+  width: 3em;
+  display: block;
+  margin-right: auto;
+  margin-top: 0em;
+  
+}
+
 /* Body */
 body {
   font-family: var(--broedtekst);
