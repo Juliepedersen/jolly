@@ -11,9 +11,9 @@
   /* farver */
   --dark: #190604;
   --white: #ffffff;
-  --brun: #a86c12;
-  --groen: #99a812;
-  --roed: #a82112;
+  --red: rgb(195, 49, 49);
+  --darkred: rgb(174, 31, 27);
+
 
   /* fonte */
   --overskrift: 'Brush Script MT', cursive;
@@ -22,13 +22,53 @@
   /* whitespace */
   --whitespace: .5rem;
 }
+/* header */
 
-/* Her bruges en variabel: --blue */
+header{
+  padding: 0.2em;
+ background-color: var(--darkred)
+
+}
+
+#hlabel{
+width: 7em;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0em;
+}
+
+/* Body */
 body {
   font-family: var(--broedtekst);
-  background-color: var(--brun);
+  background-color: var(--red);
   color: var(--white);
+  line-height: 1;
 }
+
+
+/* main */
+
+img {
+  width: 100%;
+}
+
+*{
+box-sizing: border-box;
+}
+
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  justify-content: flex-end;
+}
+
+.mobilbilleder{
+  margin: 0.2em;
+}
+
 
 /* Typografisk */
 h1,
@@ -46,14 +86,11 @@ p {
   margin-right: var(--whitespace);
   padding-bottom: var(--whitespace);
   font-size: 1.2em;
-  max-width: 35ch; /* undgå lange ulæselige linjer */
+  max-width: 35ch;
 }
 
-figcaption {
-  font-style: italic;
-  margin-left: var(--whitespace);
-  margin-right: var(--whitespace);
-}
+
+
 
 /* Smooth scroll */
 html {
@@ -65,24 +102,15 @@ html {
   min-height: 100vh;
 }
 
-/* Navigation and footer */
+/* footer */
 nav,
 footer {
-  background-color: var(--dark);
+  background-color: var(--darkred);
   padding: 35px 0;
   text-align: center;
   margin-bottom: 20px;
 }
 
-nav ul,
-footer ul {
-  display: flex; /* horisontal menu */
-  justify-content: center;
-}
-
-nav ul li,
-footer ul li {
-  margin-right: 4ch;
 }
 
 nav a,
@@ -94,41 +122,48 @@ footer {
 /* Footer */
 footer {
   width: 100%;
-  margin-bottom: 0px; /* fordi: nedarver 20px fra nav,footer */
+  margin-bottom: 0px;
+  height: 20em;
+}
+
+#flabel{
+  width: 5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Sections (højde == skærmhøjde) */
 section {
-  background-color: var(--roed);
+  background-color: var(--red);
 }
 
-/* Billeder */
-img {
-  width: 100%;
-}
 
-/* MOBILE FIRST ØVELSER */
-/* Extra small devices (phones, 600px and down) */
+
+/* Mobil */
 @media only screen and (max-width: 600px) {
-  main {background: red;}
+
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* tablets og store mobiler*/
 @media only screen and (min-width: 601px) {
-  main {background: green;}
+
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices */
 @media only screen and (min-width: 768px) {
-  main {background: blue;}
-}
+ .container {display: none;}
+ .mobilbilleder{display: none;}
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Desktop */
 @media only screen and (min-width: 992px) {
-  main {background: orange;}
-}
+.container {
+  display: none;}
+.mobilbilleder{
+  display: none;}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/* Store skærme*/
 @media only screen and (min-width: 1200px) {
-  .example {background: pink;}
+
 }
