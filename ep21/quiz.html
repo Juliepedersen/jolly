@@ -44,23 +44,47 @@
 
 		<!-- indhold -->
 	<main>
-		<section>
-			<article>
 
+		<h1 class="jollyquiz">Jollys Store Sommerkonkurrence</h1>
+		<div class="skema">
+		  <form action="/action_page.php">
+		    <label for="fname">Fulde navn</label>
+		    <input type="text" id="fname" name="Fornavn" placeholder="Dit fuldenavn..">
 
-				   <h1>Vind en campingferie i Danmark med hele familien og Jolly Cola!</h1>
-						<img class="undersidebilleder" src="images/camping.jpg" alt="Camping">
-						 <p>Deltag i Jollys store sommer konkurrence og
-							 vind en lukus campingferie på udvalgte campingpladser i Danmark.
-							 Alt du skal gøre er at deltage i Jollys store sommerkonkurrence,og så trækker vi
-							 lod om 3 heldige vindere den 20. april.
-						 </p>
+		    <label for="lname">E-mail</label>
+		    <input type="text" id="lname" name="Efternavn" placeholder="Din E-mail..">
 
-						 <a href="quiz.html"> <p class="deltagher">Deltag i Jollys store sommerquiz her</p></a>
+		    <label for="spoergsmaal">Hvilken Jolly smagsvariant er den mest solgte i Danmark?</label>
+		    <select id="1" name="spoergsmaal1">
+					<option value="svar">Svarmuligheder</option>
+		      <option value="Jolly Time">Jolly time</option>
+		      <option value="Jolly Cola">Jolly Cola</option>
+		      <option value="Jolly Abrikos">Jolly Abrikos</option>
+		    </select>
+				<label for="spoergsmaal">Hvilket land stammer Jolly Cola fra?</label>
+		    <select id="2" name="spoergsmaal2">
+					<option value="svar">Svarmuligheder</option>
+		      <option value="Svar1">Sverige</option>
+		      <option value="svar2">Tyskland</option>
+		      <option value="svar3">Danmark</option>
+		    </select>
+				<label for="spoergsmaal">Hvornår blev Jolly Cola grundlagt?</label>
+		    <select id="3" name="spoergsmaal3">
+					<option value="svar">Svarmuligheder</option>
+		      <option value="svar1">1985</option>
+		      <option value="svar2">2010</option>
+		      <option value="svar3">1959</option>
+		    </select>
 
-			 </article>
-   </section>
+		    <input type="submit" value="Send svar">
+		  </form>
+		</div>
 
+		<p id="quiztekst">Ved deltagelse i konkurrencen giver du tilladelse til at Jolly
+			må sende dig markedsføring via e-mail og accepterer vores persondatapolitik.
+			 Du kan til enhver tid tilbagekalde dette samtykke ved at afmelde dig i bunden af
+			 enhver e-mail sendt til dig.
+		 </p>
   </main>
 
 		<!-- Footer, sociale medier-->
