@@ -31,7 +31,7 @@ header{
 }
 
 #hlabel{
-width: 7em;
+width: 100px;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -44,13 +44,14 @@ margin-top: 0em;
   margin-right: 10px;
   margin-top: 0em;
   position: absolute;
-  bottom: 94%;
+  bottom: 95%;
 }
+
 
 /* I burgermenuen */
 
 
-#burgerpunkter{
+.burgerpunkter{
   text-align: center;
   padding-top: 2em;
   font-size: 28px;
@@ -59,14 +60,24 @@ margin-top: 0em;
   font-style: normal;
 }
 
+.underpunkter{
+  text-align: center;
+  padding-top: 1em;
+  font-size: 16px;
+  font-family: acier-bat-solid, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
 /* ikke besøgt link */
 a:link {
-  color: var(---white);
+  color: #fff;
 }
 
 /* besøgt link */
 a:visited {
-  color: lightblue;
+  color: #fff;
 }
 
 
@@ -85,6 +96,37 @@ body {
 
 /* main */
 
+/* NOTE: button-funktion på forsidebilleder */
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.box .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: rgb(195, 49, 49);
+  font-size: 20px;
+  font-family: acier-bat-solid, sans-serif;
+  padding: 10px 24px;
+  width: 60%;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+}
+
+
 img {
   width: 100%;
 }
@@ -100,31 +142,6 @@ box-sizing: border-box;
   padding: 1em;
   justify-content: flex-end;
 }
-
-.mobilbilleder{
-  margin: 0.2em;
-}
-
-
-/* Typografisk */
-h1,
-h2,
-h3 {
-  font-family: var(--overskrift);
-  font-size: 2.2em;
-  text-align: center;
-  margin-top: var(--whitespace);
-  margin-bottom: var(--whitespace);
-}
-
-p {
-  margin-left: var(--whitespace);
-  margin-right: var(--whitespace);
-  padding-bottom: var(--whitespace);
-  font-size: 1.2em;
-  max-width: 35ch;
-}
-
 
 
 
@@ -155,15 +172,15 @@ footer {
   text-decoration: none;
 }
 
-/* Footer */
+/* Footer - sociale medier og info */
 footer {
   width: 100%;
   margin-bottom: 0px;
   height: 20em;
 }
 
-#flabel{
-  width: 6em;
+.flabel{
+  width: 5em;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -171,15 +188,21 @@ footer {
 
 }
 
+#hr{
+  border-width: medium;
+  border-style: inset;
+}
+
 #fb{
   width: 3em;
   margin-top: 2em;
 
 
+
 }
 
 #insta{
-  width: 3em;
+  width: 2.9em;
   margin-top: 2em;
 
 }
@@ -189,8 +212,18 @@ footer {
   font-weight: 100;
   font-size: 1em;
   font-style: normal;
-  padding-left:2.1em;
   padding-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vestfyen{
+  width: 7em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+
 }
 
 /* Sections (højde == skærmhøjde) */
@@ -198,36 +231,53 @@ section {
   background-color: var(--red);
 }
 
+/* Undersiderne */
+
+
 
 
 /* Mobil */
 @media only screen and (max-width: 600px) {
 
+
 }
 
 /* tablets og store mobiler*/
 @media only screen and (min-width: 601px) {
-
+  .box {display: none;}
+  .container {display: none;}
+  .mobilbilleder{display: none;}
+  #burger{display: none;}
+  .undersidebilleder{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+  }
 }
 
 /* Medium devices */
 @media only screen and (min-width: 768px) {
+ .box {display: none;}
  .container {display: none;}
  .mobilbilleder{display: none;}
- #burger{
-   display: none;}
+ #burger{display: none;}
+ 
 
 /* Desktop */
 @media only screen and (min-width: 992px) {
-.container {
-  display: none;}
-.mobilbilleder{
-  display: none;}
-  #burger{
-    display: none;}
+.box {display: none;}
+.container {display: none;}
+.mobilbilleder{display: none;}
+#burger{display: none;}
 
 
 /* Store skærme*/
 @media only screen and (min-width: 1200px) {
+  .box {display: none;}
+  .container {display: none;}
+  .mobilbilleder{display: none;}
+  #burger{display: none;}
 
 }
