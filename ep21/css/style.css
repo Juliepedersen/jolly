@@ -18,6 +18,18 @@
   --whitespace: .5rem;
 }
 
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Wrap */
+#wrap {
+  min-height: 100vh;
+}
+
 /* Typografi */
 
 h1{
@@ -46,24 +58,100 @@ h2{
 
 }
 
+h3{
+  font-family: novel-sans-hebrew, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  padding-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  text-align: center;
+
+}
+
 p{
   font-family: novel-sans-hebrew, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.1em;
-  padding-top: 1em;
+  padding-top: 3em;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5em;
   line-height: 2.5ch;
 
 }
-/* header */
+/* header og indhold*/
 
 header{
-  padding: 0.2em;
- background-color: var(--darkred)
+padding: 0.2em;
+background-color: var(--darkred)
 
+}
+/* navigationsbar */
+*{
+  margin: 0;
+  padding: 0;
+}
+.navigationsbar nav{
+  width: 100%;
+  height: 75px;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.navigationsbar nav ul{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0.5em;
+  list-style: none;
+  display: flex;
+  transition: all 0.5s ease;
+
+}
+
+.navigationsbar nav ul li{
+  width: 30%;
+  float: left;
+  text-align: center;
+  color: red;
+  padding-left: -0;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+
+}
+
+.navigationsbar nav ul li a:hover{
+  color: #730909;
+
+}
+/* Navigationsbar slut */
+
+.logoarea{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top:1.7em;
+  content: "";
+  margin-left: -100px;
+  text-align: center;
+}
+
+.hlabel{
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0em;
 }
 
 #hlabel{
@@ -108,12 +196,12 @@ margin-top: 0em;
 
 /* ikke besøgt link */
 a:link {
-  color: #fff;
+  color: white;
 }
 
 /* besøgt link */
 a:visited {
-  color: #fff;
+  color: white;
 }
 
 
@@ -123,16 +211,15 @@ a{
 
 /* Body */
 body {
-  font-family: var(--broedtekst);
   background-color: var(--red);
   color: var(--white);
   line-height: 1;
 }
 
 
-/* main */
+/* main - indhold på siden */
 
-/* NOTE: button-funktion på forsidebilleder */
+/* button-funktion på forsidebilleder */
 .box {
   position: relative;
   width: 100%;
@@ -162,9 +249,21 @@ body {
   text-align: center;
 }
 
+/* forsidebilleder på desktop */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  padding-top: 2em;
+  text-align: justify;
+  width: 100%;
+}
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 *{
@@ -180,94 +279,6 @@ box-sizing: border-box;
 }
 
 
-
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Wrap */
-#wrap {
-  min-height: 100vh;
-}
-
-/* footer */
-nav,
-footer {
-  background-color: var(--darkred);
-  padding: 35px 0;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-}
-
-nav a,
-footer {
-  color: var(--white);
-  text-decoration: none;
-}
-
-/* Footer - sociale medier og info */
-footer {
-  width: 100%;
-  margin-bottom: 0px;
-  height: 20em;
-}
-
-.flabel{
-  width: 5em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1em;
-
-}
-
-#hr{
-  border-width: medium;
-  border-style: inset;
-}
-
-#fb{
-  width: 3em;
-  margin-top: 2em;
-
-
-
-}
-
-#insta{
-  width: 2.9em;
-  margin-top: 2em;
-
-}
-
-.footertekst{
-  font-family: proxima-nova, sans-serif;
-  font-weight: 100;
-  font-size: 1em;
-  font-style: normal;
-  padding-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.vestfyen{
-  width: 7em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1em;
-
-}
-
-
-
-/* Sections (højde == skærmhøjde) */
-section {
-  background-color: var(--red);
-}
 
 /* Undersiderne */
 
@@ -312,7 +323,7 @@ input[type=submit] {
 
 .skema {
   border-radius: 5px;
-  background-color: var(---red);
+  background-color: rgb(195, 49, 49);
   padding: 20px;
   font-family: novel-sans-hebrew, sans-serif;
 }
@@ -355,10 +366,102 @@ ul{
   text-decoration: underline;
 }
 
+.undersidebilleder{
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.fbig{
+  width: 3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+
+
+
+
+/* footer */
+nav,
+footer {
+  background-color: var(--darkred);
+  padding: 35px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+nav a,
+footer {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Footer - sociale medier og info */
+footer {
+  width: 100%;
+  margin-bottom: 0px;
+  height: 20em;
+
+
+}
+
+.flabel{
+  width: 5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+
+}
+
+#hr{
+  border-width: medium;
+  border-style: inset;
+}
+
+#fb{
+  width: 3em;
+  margin-top: 2em;
+
+
+}
+
+#insta{
+  width: 2.9em;
+  margin-top: 2em;
+
+}
+
+.footertekst{
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  font-style: normal;
+  padding-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vestfyen{
+  width: 7em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+
+}
+
+
+
 
 
 /* Mobil */
 @media only screen and (max-width: 600px) {
+.navigationsbar{display: none;}
+.logoarea{ display: none;}
 
 
 }
@@ -374,9 +477,9 @@ ul{
     margin-right: auto;
     max-width: 50%;
     max-height: 50%;
-    display: block;
-  }
-}
+    display: block;}
+
+
 
 /* Medium devices */
 @media only screen and (min-width: 768px) {
@@ -384,15 +487,13 @@ ul{
  .container {display: none;}
  .mobilbilleder{display: none;}
  #burger{display: none;}
-
+ #hlabel{
+   width: 9em;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0.5em;}
 
 /* Desktop */
 @media only screen and (min-width: 992px) {
-
-
-
-/* Store skærme*/
-@media only screen and (min-width: 1200px) {
-
-
 }
