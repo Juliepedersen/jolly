@@ -121,6 +121,7 @@ background-color: var(--darkred)
   float: left;
   text-align: center;
   color: red;
+  font-family: novel-sans-hebrew, sans-serif;
   padding-left: -0;
   text-transform: uppercase;
   cursor: pointer;
@@ -294,6 +295,20 @@ box-sizing: border-box;
   text-align: center;
 
 }
+.billedetekst{
+font-family: novel-sans-hebrew, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.1em;
+padding-top: 1em;
+margin-left: auto;
+margin-right: auto;
+padding-left: 0.5em;
+line-height: 2.5ch;
+text-align: center;
+}
+
+
 
 /* skema til quiz */
 input[type=text], select {
@@ -369,7 +384,16 @@ ul{
 .undersidebilleder{
   height: auto;
   margin-left: auto;
+  margin-bottom: 2em;
+    padding-top: 4em;
+
+}
+
+.undersidebilleder2{
+  height: auto;
+  margin-left: auto;
   margin-right: auto;
+    margin-right: 50%;
 
 }
 
@@ -377,10 +401,8 @@ ul{
   width: 3em;
   margin-top: 2em;
   margin-bottom: 1em;
+
 }
-
-
-
 
 
 /* footer */
@@ -462,6 +484,8 @@ footer {
 @media only screen and (max-width: 600px) {
 .navigationsbar{display: none;}
 .logoarea{ display: none;}
+.row {display: none;}
+.undersidebilleder2 {display: none}
 
 
 }
