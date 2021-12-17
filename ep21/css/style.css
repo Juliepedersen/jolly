@@ -168,8 +168,8 @@ margin-top: 0em;
 #burger{
   width: 2em;
   display: block;
-  margin-right: 10px;
-  margin-top: 0em;
+  margin-right: 2em;
+  margin-top: 1em;
   position: absolute;
   bottom: 95%;
 }
@@ -453,6 +453,10 @@ ul{
 
   }
 
+ul{
+  text-decoration: none;
+}
+
 
     /* sidebar navigation */
 
@@ -585,7 +589,10 @@ footer {
 .billedetekst2{display: none;}
 .deltagher2{display: none;}
 h1{font-size: 1.7em;}
-h3{ font-size: 1.7em;}
+h3{ font-size: 1.7em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 .sidenav{ display: none;}
 
 
