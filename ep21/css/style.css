@@ -591,8 +591,7 @@ footer {
 h1{font-size: 1.7em;}
 h3{ font-size: 1.7em;
   padding-top: 1em;
-  padding-bottom: 1em;
-}
+  padding-bottom: 1em;}
 .sidenav{ display: none;}
 
 
@@ -632,10 +631,7 @@ h3{ font-size: 1.7em;
     .deltagher2{ font-size: 1.8em;}
     header{height: 3em;}
     .billedetekst{ padding-top: 5em}
-
-
-
-
+  }
 
 
 /* Medium devices */
@@ -653,6 +649,4 @@ h3{ font-size: 1.7em;
    margin-right: auto;
    margin-top: 0.5em;}
 
-/* Desktop */
-@media only screen and (min-width: 992px) {
-}
+ }
