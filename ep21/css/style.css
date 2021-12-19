@@ -166,7 +166,7 @@ margin-top: 0em;
 }
 
 #burger{
-  width: 2.1em;
+  width: 2.5em;
   margin-right: 2.5em;
   margin-top: 1em;
   position: absolute;
@@ -630,6 +630,7 @@ h3{ font-size: 1.7em;
     .deltagher2{ font-size: 1.8em;}
     header{height: 3em;}
     .billedetekst{ padding-top: 5em}
+    .deltagher{ margin-right: 2.5em;}
   }
 
 
@@ -645,5 +646,6 @@ h3{ font-size: 1.7em;
    margin-left: auto;
    margin-right: auto;
    margin-top: 0.5em;}
+
 
  }
