@@ -166,12 +166,11 @@ margin-top: 0em;
 }
 
 #burger{
-  width: 2em;
-  display: block;
-  margin-right: 2em;
+  width: 2.1em;
+  margin-right: 2.5em;
   margin-top: 1em;
   position: absolute;
-  bottom: 95%;
+  bottom: 94%;
 }
 
 
@@ -640,8 +639,6 @@ h3{ font-size: 1.7em;
  .container {display: none;}
  .mobilbilleder{display: none;}
  #burger{display: none;}
- .konkurrence{ display: none;}
-
  #hlabel{
    width: 9em;
    display: block;
